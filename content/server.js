@@ -22,6 +22,7 @@ udpPort.open();
 io.on('connection', (socket) => {
     console.log('user connected');
     udpPort.on("message", function (oscMsg, timeTag, info) {
+        console.log('/param' + ': ' + oscMsg.args[0].value);
         if(oscMsg.address === "/param"){
             let index = oscMsg.args[0].value;
             socket.emit('param', { value : index } );

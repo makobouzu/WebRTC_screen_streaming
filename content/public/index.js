@@ -8,6 +8,7 @@ unmuteButton_.addEventListener('click', function() {
     video_.muted = false;
 });
 
+// preloadするために変更するかも。
 check_.forEach(function(e) {
     e.addEventListener("click", function() {  
         let   videoTime_ = video_.currentTime; 

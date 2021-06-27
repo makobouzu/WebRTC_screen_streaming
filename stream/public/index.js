@@ -1,12 +1,14 @@
 const Peer = window.Peer;
 
 (async function main() {
-    const localVideo = document.getElementById('js-local-stream');
-    const joinTrigger = document.getElementById('js-join-trigger');
+    const localVideo   = document.getElementById('js-local-stream');
+    const joinTrigger  = document.getElementById('js-join-trigger');
     const leaveTrigger = document.getElementById('js-leave-trigger');
-    const roomId = document.getElementById('js-room-id');
-    const roomMembers   = document.getElementById('js-room-members');
-    const changeTiming  = document.getElementById('change-time');
+    const roomCheck    = document.getElementById('js-room-check');
+    const roomId       = document.getElementById('js-room-id');
+    const roomMembers  = document.getElementById('js-room-members');
+    const changeTiming = document.getElementById('change-time');
+
 
     const localStream = await navigator.mediaDevices.getDisplayMedia({
         audio: true,
@@ -28,7 +30,8 @@ const Peer = window.Peer;
 
   // Register join Room
     joinTrigger.addEventListener('click', () => {
-        console.log("ENTER: " + roomId.value);
+        console.log("ENTER: " + roomId.value + " room!");
+        roomCheck.innerHTML = "ENTER: " + roomId.value;
         if (!peer.open) {
             return;
         }
