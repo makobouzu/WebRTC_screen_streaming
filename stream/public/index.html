@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Noise selection/rejection filter Stream</title>
+    <meta name="description" content="'Noise selection/rejection filter'は情報科学芸術大学院大学メディア表現研究科修士2年の天野真が制作した作品である。">
+    <!-- <link rel="icon" href="dist/icon.ico"> -->
+
+    <meta property="og:title" content="Noise selection/rejection filter Stream">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="'Noise selection/rejection filter'は情報科学芸術大学院大学メディア表現研究科修士2年の天野真が制作した作品である。">
+    <!-- <meta property="og:url" content="https://www."> -->
+    <meta property="og:site_name" content="Noise selection/rejection filter Stream">
+    <meta property="og:image" content="img/thumbnail.png">
+
+    <script src="./bundle.js" defer></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+  
+    <style>
+        body { margin: 0; padding: 0; font-family: Helvetica} 
+        #js-room-members { display: none;}
+        #change-time { display: none;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="note">Room mode: SFU</p>
+        <div class="room">
+            <div>
+                <input type="text" placeholder="Room Name" id="js-room-id">
+                <button id="js-join-trigger">Join</button>
+                <button id="js-leave-trigger">Leave</button>
+                <p id="js-room-members"></p>
+                <button id="change-time"></button>
+                <video id="js-local-stream"></video>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.webrtc.ecl.ntt.com/skyway-4.4.1.js" defer></script>
+    <script src="./index.js" defer></script>
+</body>
+</html>
