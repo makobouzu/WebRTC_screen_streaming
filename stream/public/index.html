@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Noise selection/rejection filter Stream</title>
     <meta name="description" content="'Noise selection/rejection filter'は情報科学芸術大学院大学メディア表現研究科修士2年の天野真が制作した作品である。">
-    <!-- <link rel="icon" href="dist/icon.ico"> -->
+    <link rel="icon" href="img/favicon.ico">
 
     <meta property="og:title" content="Noise selection/rejection filter Stream">
     <meta property="og:type" content="website">
@@ -28,6 +28,15 @@
 <body>
     <div class="container">
         <p class="note">SFU Room Stream</p>
+        <div class="inputSource">
+            <div class="select">
+                <label for="audioSource">Audio input source: </label><select id="js-audio-source"></select>
+            </div>
+            <div class="select">
+                <label for="videoSource">Video source: </label><select id="js-video-source"></select>
+            </div>
+            <button id="js-input-device">Input!!</button>
+        </div>
         <div class="room">
             <div>
                 <input type="text" placeholder="Room Name" id="js-room-id">
