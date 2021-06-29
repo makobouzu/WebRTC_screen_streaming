@@ -5,14 +5,16 @@ export default class Receive {
 		this.socket = io();
 		
         this.select_num = document.getElementById('js-select-num');
-        this.reject_num = document.getElementById('js-reject-num');
         this.socket.connect().on("selectNum", (data) => {
             let index = data.value;
             this.select_num.innerHTML = String(index) + "人";
         });
-        this.socket.connect().on("rejectNum", (data) => {
+
+        this.target = document.getElementById('target');
+        this.elem   = target.label;
+        this.socket.connect().on("mode", (data) => {
             let index = data.value;
-            this.reject_num.innerHTML = String(index) + "人";
+            this.target.mode[index].checked = true;
         });
     }
 };

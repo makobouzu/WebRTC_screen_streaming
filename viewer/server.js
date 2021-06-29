@@ -54,9 +54,9 @@ io.on('connection', (socket) => {
             let index = oscMsg.args[0].value;
             socket.emit('selectNum', { value : index } );
         }
-        if(oscMsg.address === "/reject"){
+        if(oscMsg.address === "/mode"){
             let index = oscMsg.args[0].value;
-            socket.emit('rejectNum', { value : index } );
+            socket.emit('mode', { value : index } );
         }
     });
 });
