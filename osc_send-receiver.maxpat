@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 578.0, 111.0, 1217.0, 983.0 ],
+		"rect" : [ 1142.0, 130.0, 699.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 547.0, 310.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-177",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -58,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.166666666666742, 169.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -126,7 +138,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 547.0, 368.5, 82.0, 20.0 ],
+					"patching_rect" : [ 547.0, 401.5, 82.0, 20.0 ],
 					"text" : "oF"
 				}
 
@@ -296,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 547.0, 310.0, 93.0, 22.0 ],
+					"patching_rect" : [ 547.0, 343.0, 93.0, 22.0 ],
 					"text" : "prepend /param"
 				}
 
@@ -307,7 +319,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 547.0, 343.0, 138.0, 22.0 ],
+					"patching_rect" : [ 547.0, 376.0, 138.0, 22.0 ],
 					"text" : "udpsend 127.0.0.1 5445"
 				}
 
@@ -442,7 +454,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.666666666666686, 487.5, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "2"
 				}
 
 			}
@@ -592,7 +604,7 @@
 								"filename" : "yolo.wav",
 								"filekind" : "audiofile",
 								"id" : "u519001330",
-								"selection" : [ 0.0, 0.0 ],
+								"selection" : [ 0.18763698299452, 0.996507922346532 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -604,7 +616,7 @@
 								"filename" : "semaseg.wav",
 								"filekind" : "audiofile",
 								"id" : "u896005966",
-								"selection" : [ 0.0, 0.0 ],
+								"selection" : [ 0.186522306621955, 0.996507922346532 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -1255,7 +1267,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.416666666666742, 110.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -1506,7 +1518,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-171", 0 ]
 				}
 
@@ -1590,6 +1602,13 @@
 					"destination" : [ "obj-84", 0 ],
 					"order" : 2,
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}

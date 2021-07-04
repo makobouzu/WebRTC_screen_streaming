@@ -26,23 +26,33 @@
         .container-fluid { padding-left: 0px; padding-right: 0px;}
         #change-time { display: none; }
         #change-num {display: none;}
-        .index { margin: 1% 0 0 1%; position: absolute; }
+        .index { margin: 1% 0 0 1%; position: absolute; width: 100%;}
         #js-select-num { margin: 0; z-index: 10; }
         .room { z-index: -1; position: relative;}
         #ui { z-index: 10; position: absolute; width: 100%; right: 40%; bottom: 10%;}
 
-        .vertical-center {min-height: 100%; min-height: 100vh; display: flex; align-items: center;}
+        .vertical-center {min-height: 100vh; display: flex; align-items: center;}
 
         #modal-button { display: none;}
 
-        .main-wrapper {border-radius: 4px; background-color: white; margin: 0% 5% 0% 85%; padding: 1%; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: relative; }
-        .icons-wrapper {margin: 0px auto; text-align: center;}
-        i.material-icons { font-size: 1.5rem; background-color: #cd8484; color: white; position: relative; border-radius: 50%; margin: 3px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);}
+        #human-icons { padding: 0% 0.5%; color: red;}
+
+        .main-wrapper {border-radius: 4px; background-color: white; margin: 0% 3% 0% 83%; padding: 1%; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: relative; }
+        .icons-wrapper {margin: 5% auto; text-align: center;}
+        i.material-icons { font-size: 1.5rem; background-color: #cd8484; color: white; position: relative; border-radius: 50%; margin: 1%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);}
         i.material-icons:after {content: ""; width: 100%; height: 100%; border: solid 2px; transform: scale(0.8); position: absolute; top: 0px; left: 0px; border-radius: 50%; border-color: #cd8484;}
         i.material-icons:hover:after {transform: scale(1);box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23); }
         i.material-icons:hover {color: #cd8484; background-color: transparent; cursor: pointer; box-shadow: none;}
-        .human-tag {padding: 6px 16px;}
-        .car-tag {padding: 6px 9px;}
+        .human-tag {padding: 9% 15%;}
+        .car-tag {padding: 9% 10%;}
+        @media (max-width: 1230px) {
+            i.material-icons { margin: 0.5%; font-size: 1.0rem;}
+            .human-tag {padding: 9% 16%;}
+            .car-tag {padding: 9% 11%;}
+        }
+        @media (max-width: 500px) {
+            .main-wrapper { margin: 0% 0% 0% 80%;}
+        }
     </style>
 </head>
 

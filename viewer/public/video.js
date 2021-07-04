@@ -51,8 +51,8 @@ window.addEventListener('load', (event) => {
         }
         for(let i = 0; i < index; ++i){
             const child = document.createElement("i");
-            child.id = "human-button";
-            child.className = "material-icons human-tag";
+            child.id = "human-icons";
+            // child.className = "material-icons human-tag";
             const child_icon = document.createElement("i");
             child_icon.className = "fas fa-male";
             child.appendChild(child_icon);
