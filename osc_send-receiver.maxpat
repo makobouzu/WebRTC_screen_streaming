@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 632.0, 127.0, 1217.0, 983.0 ],
+		"rect" : [ 578.0, 111.0, 1217.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -160,7 +160,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 384.666666666666686, 844.0, 52.0, 22.0 ],
+					"patching_rect" : [ 384.666666666666686, 836.0, 52.0, 22.0 ],
 					"text" : "s restart"
 				}
 
@@ -172,7 +172,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.666666666666686, 815.0, 50.0, 22.0 ],
+					"patching_rect" : [ 384.666666666666686, 807.0, 50.0, 22.0 ],
 					"text" : "0"
 				}
 
@@ -184,7 +184,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.666666666666686, 715.5, 94.0, 22.0 ],
+					"patching_rect" : [ 384.666666666666686, 707.5, 94.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -197,7 +197,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 384.666666666666686, 779.5, 24.0, 24.0 ]
+					"patching_rect" : [ 384.666666666666686, 771.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -210,7 +210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 489.916666666666742, 682.0, 123.0, 22.0 ],
+					"patching_rect" : [ 489.916666666666742, 674.0, 123.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"name" : "start",
 						"parameter_enable" : 0,
@@ -236,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 489.916666666666742, 715.0, 151.0, 22.0 ],
+					"patching_rect" : [ 489.916666666666742, 707.0, 151.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"name" : "loopnotify",
 						"parameter_enable" : 0,
@@ -260,7 +260,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 384.666666666666686, 746.5, 177.0, 22.0 ],
+					"patching_rect" : [ 384.666666666666686, 738.5, 177.0, 22.0 ],
 					"text" : "if $s1[0] == 0 then 1 else out2 0"
 				}
 
@@ -272,7 +272,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 384.666666666666686, 682.0, 55.0, 22.0 ],
+					"patching_rect" : [ 384.666666666666686, 674.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 

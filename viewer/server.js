@@ -56,6 +56,7 @@ io.on('connection', (socket) => {
         }
         if(oscMsg.address === "/mode"){
             let index = oscMsg.args[0].value;
+            // console.log("/mode: " + index);
             socket.emit('mode', { value : index } );
         }
     });

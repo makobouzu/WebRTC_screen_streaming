@@ -51,20 +51,6 @@ const Peer = window.Peer;
         await localVideo.play().catch(console.error);
     }
 
-
-    // const localStream = await navigator.mediaDevices.getDisplayMedia({
-    //     audio: true,
-    //     video: true,
-    // }).catch(console.error);
-
-  // Screen sharing render
-    // localVideo.muted = true;
-    // localVideo.srcObject = localStream;
-    // localVideo.playsInline = true;
-    // localVideo.style.width = '100%';
-    // localVideo.style.height = 'auto';
-    // await localVideo.play().catch(console.error);
-
   // peer
     const peer = (window.peer = new Peer({
         key: "f58f7416-420e-434a-8c09-c68dcd4fe84e"
