@@ -12,8 +12,10 @@ export default class Receive {
             this.trigger.click();
         });
 
-        this.human = document.getElementById('human-button');
-        this.car   = document.getElementById('car-button');
+        this.view = document.getElementById('view');
+        this.human = document.getElementById('human');
+        this.bird = document.getElementById('bird');
+        this.car   = document.getElementById('car');
         this.socket.connect().on("mode", (data) => {
             let index = data.value;
             if(index === 0){

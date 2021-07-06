@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1142.0, 130.0, 699.0, 983.0 ],
+		"rect" : [ 784.0, 162.0, 699.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"editor_rect" : [ 100.0, 100.0, 300.0, 300.0 ],
+					"embed" : 1,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 489.916666666666742, 640.0, 127.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"saved_object_attributes" : 					{
+						"name" : "done",
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"range" : 4,
+						"showeditor" : 0,
+						"size" : 4
+					}
+,
+					"showeditor" : 0,
+					"size" : 4,
+					"table_data" : [ 0, 3, 3, 3, 3 ],
+					"text" : "table done @embed 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -604,7 +631,7 @@
 								"filename" : "yolo.wav",
 								"filekind" : "audiofile",
 								"id" : "u519001330",
-								"selection" : [ 0.18763698299452, 0.996507922346532 ],
+								"selection" : [ 0.696495054153056, 0.996507922346532 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -616,7 +643,7 @@
 								"filename" : "semaseg.wav",
 								"filekind" : "audiofile",
 								"id" : "u896005966",
-								"selection" : [ 0.186522306621955, 0.996507922346532 ],
+								"selection" : [ 0.0, 0.996507922346532 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
