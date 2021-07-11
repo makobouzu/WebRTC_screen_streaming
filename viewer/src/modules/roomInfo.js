@@ -10,5 +10,12 @@ export default class Room {
                 trigger: "load"
             });
         });
+
+        this.delayTrigger = document.getElementById("change-buffer");
+        this.delayTrigger.addEventListener('click', () => {
+            this.socket.emit('buffer', {
+                buffer: "load"
+            });
+        });
     }
 };

@@ -48,16 +48,39 @@ io.on('connection', (socket) => {
             ]
             }, "127.0.0.1", 54001);
     });
+
+    socket.on('buffer', obj => {
+        udpPort.send({
+            address: "/buffer",
+            args: [
+                {
+                    type: "s",
+                    value: obj.buffer
+                }
+            ]
+            }, "127.0.0.1", 54001);
+    });
     
     udpPort.on("message", function (oscMsg, timeTag, info) {
         if(oscMsg.address === "/select"){
-            let index = oscMsg.args[0].value;
-            socket.emit('selectNum', { value : index } );
+            let num = oscMsg.args[0].value;
+            let mode  = oscMsg.args[1].value;
+            socket.emit('selectNum', { 
+                user : num,
+                param : mode
+            } );
         }
         if(oscMsg.address === "/mode"){
             let index = oscMsg.args[0].value;
-            // console.log("/mode: " + index);
             socket.emit('mode', { value : index } );
+        }
+        if(oscMsg.address === "/toggle"){
+            let index = oscMsg.args[0].value;
+            socket.emit('toggle', { value : index } );
+        }
+        if(oscMsg.address === "/delay"){
+            let index = oscMsg.args[0].value;
+            socket.emit('delay', { value : index } );
         }
     });
 });

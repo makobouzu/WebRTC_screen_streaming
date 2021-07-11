@@ -6,7 +6,8 @@
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js",
-    "build": "webpack build"
+    "build": "webpack build",
+    "heroku-postbuild": "webpack build"
   },
   "keywords": [],
   "author": "",
