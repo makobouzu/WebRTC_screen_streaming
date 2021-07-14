@@ -46,6 +46,10 @@ export default class Receive {
                 if(!this.targetUi[i].checked){
                     const containers = document.getElementsByClassName("input-container");
                     containers[i].style.opacity = "0.2";
+                    containers[i].style.transform = "scale(1, 1)";
+                }else {
+                    const containers = document.getElementsByClassName("input-container");
+                    containers[i].style.opacity = "0.5";
                 }
             }
             this.ui.style.pointerEvents = "none";
@@ -58,7 +62,7 @@ export default class Receive {
                 containers[i].style.opacity = "1.0";
                 if(this.targetUi[i].checked){
                     const container = document.getElementsByClassName("input-container");
-                    container[i].style.transform = "scale(0.9, 0.9)";
+                    container[i].style.transform = "scale(0.85, 0.85)";
                 }
             }
             this.ui.style.pointerEvents = "auto";

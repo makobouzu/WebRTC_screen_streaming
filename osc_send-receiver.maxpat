@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 860.0, 162.0, 980.0, 927.0 ],
+		"rect" : [ 894.0, 102.0, 980.0, 927.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -154,8 +154,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 626.25, 108.0, 81.0, 23.0 ]
+					"parameter_enable" : 1,
+					"patching_rect" : [ 626.25, 108.0, 81.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 6000 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number",
+							"parameter_shortname" : "number",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"varname" : "number"
 				}
 
 			}
@@ -253,7 +266,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.166666666666742, 169.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "3"
 				}
 
 			}
@@ -566,7 +579,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.666666666666686, 444.5, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "4"
 				}
 
 			}
@@ -676,35 +689,11 @@
 					"color" : [ 0.32156862745098, 0.756862745098039, 0.815686274509804, 1.0 ],
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Macintosh HD:/Users/makobouzu/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds/yolo.wav",
-								"filename" : "yolo.wav",
+								"absolutepath" : "/Users/makobouzu/Documents/Python/spleeter/output/trim/original.wav",
+								"filename" : "original.wav",
 								"filekind" : "audiofile",
-								"id" : "u519001330",
-								"selection" : [ 0.713585231267447, 0.998152662843161 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"loop" : 0
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/makobouzu/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds/semaseg.wav",
-								"filename" : "semaseg.wav",
-								"filekind" : "audiofile",
-								"id" : "u896005966",
-								"selection" : [ 0.713585231267447, 0.998152662843161 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"loop" : 0
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/makobouzu/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds/yolo.wav",
-								"filename" : "yolo.wav",
-								"filekind" : "audiofile",
-								"id" : "u645003745",
-								"selection" : [ 0.713585231267447, 0.998152662843161 ],
+								"id" : "u825000940",
+								"selection" : [ 0.369423742507477, 0.998984838872832 ],
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -712,11 +701,35 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/makobouzu/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds/semaseg.wav",
-								"filename" : "semaseg.wav",
+								"absolutepath" : "/Users/makobouzu/Documents/Python/spleeter/output/trim/invert_human.wav",
+								"filename" : "invert_human.wav",
 								"filekind" : "audiofile",
-								"id" : "u035003752",
-								"selection" : [ 0.713585231267447, 0.998152662843161 ],
+								"id" : "u235000947",
+								"selection" : [ 0.466348356818252, 0.998985244284802 ],
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/makobouzu/Documents/Python/spleeter/output/trim/invert_car.wav",
+								"filename" : "invert_car.wav",
+								"filekind" : "audiofile",
+								"id" : "u982000954",
+								"selection" : [ 0.411944061550101, 0.998985244284802 ],
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/makobouzu/Documents/Python/spleeter/output/trim/invert_bird.wav",
+								"filename" : "invert_bird.wav",
+								"filekind" : "audiofile",
+								"id" : "u599000961",
+								"selection" : [ 0.086951373572608, 0.998985244284802 ],
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -1378,7 +1391,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.416666666666742, 110.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "3"
 				}
 
 			}
@@ -1909,6 +1922,7 @@
  ],
 		"parameters" : 		{
 			"obj-16" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-17" : [ "number", "number", 0 ],
 			"obj-7" : [ "playlist~", "playlist~", 0 ],
 			"parameterbanks" : 			{
 
@@ -1918,16 +1932,30 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "yolo.wav",
-				"bootpath" : "~/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds",
-				"patcherrelativepath" : "../../of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds",
+				"name" : "original.wav",
+				"bootpath" : "~/Documents/Python/spleeter/output/trim",
+				"patcherrelativepath" : "../../Python/spleeter/output/trim",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "semaseg.wav",
-				"bootpath" : "~/Documents/of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds",
-				"patcherrelativepath" : "../../of_v0.11.1_osx_release/apps/myApps/noise-selection-rejection-filter/bin/data/sounds",
+				"name" : "invert_human.wav",
+				"bootpath" : "~/Documents/Python/spleeter/output/trim",
+				"patcherrelativepath" : "../../Python/spleeter/output/trim",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "invert_car.wav",
+				"bootpath" : "~/Documents/Python/spleeter/output/trim",
+				"patcherrelativepath" : "../../Python/spleeter/output/trim",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "invert_bird.wav",
+				"bootpath" : "~/Documents/Python/spleeter/output/trim",
+				"patcherrelativepath" : "../../Python/spleeter/output/trim",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
