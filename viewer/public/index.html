@@ -25,10 +25,10 @@
         p { margin-top: 0rem; margin-bottom: 0rem; }
         .container-fluid { padding-left: 0px; padding-right: 0px; }
 
-        .index { margin: 1% 0 0 1%; position: absolute; width: 100%; }
+        .index { z-index: 15; margin: 1% 0 0 1%; position: absolute; width: 100%; }
 
         .room { z-index: -1; position: relative; }
-        .vertical-center {min-width: 100%; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .vertical-center {min-width: 100%; width: 100vw; height: 100vh;}
         video { width: 100%; }
         #change-time { display: none; }
         #change-buffer { display: none; }
@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="input-container">
+                <!-- <div class="input-container">
                     <input id="bird" class="radio-button" type="radio" name="radio" value=3 onclick="radioSelection(this, 3)"/>
                     <div class="radio-tile">
                         <label for="bird" class="radio-tile-label">
@@ -122,7 +122,7 @@
                         </div>
                         BIRD</label>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             </form>
