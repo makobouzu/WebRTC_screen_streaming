@@ -14,7 +14,7 @@ const targetUi = document.getElementById("target-ui").radio;
 const viewTag  = document.getElementById('view');
 const humanTag = document.getElementById('human');
 const carTag   = document.getElementById('car');
-const birdTag  = document.getElementById('bird');
+// const birdTag  = document.getElementById('bird');
 
 function radioSelection(already, num){
     var mode = document.getElementById('mode-num').innerHTML;
